@@ -87,6 +87,7 @@ const addFood= () =>{
 }
 
 const gameOver = () =>{
+    reintentar.style.display = 'block'
     gameOverSign.style.display = 'block'
     clearInterval(moveInterval)
     startButton.disabled = false
@@ -157,7 +158,7 @@ const setGame = () => {
 
 const startGame = () =>{
     startButton.style.display = 'none'
-    reintentar.style.display = 'block'
+    reintentar.style.display = 'none'
     hrecord.style.display = 'block'
     hpuntuacion.style.display = 'block'
     hsnake.style.display = 'none'

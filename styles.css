@@ -39,18 +39,20 @@
     margin-top: 10px;
 }
 #reintentar{
+    border-radius: 0px;
     font-size: 25px;
     margin-top: 5px;
     height: 45px;
     position: fixed;
     left: 880px;
-    bottom: 85px;
+    bottom: 445px;
     display: none;
     background-color: #f35a69;
     border: none;
     color: white;
 }
 #start{
+    border-radius: 0px;
     margin-top: 5px;
     height: 45px;
     position: fixed;
