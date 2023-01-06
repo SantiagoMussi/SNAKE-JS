@@ -51,6 +51,11 @@
     border: none;
     color: white;
 }
+#start:hover, #reintentar:hover{
+    background-color: #f12e41;
+    cursor: pointer;
+}
+
 #start{
     border-radius: 0px;
     margin-top: 5px;

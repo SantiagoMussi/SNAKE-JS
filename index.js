@@ -115,7 +115,7 @@ const directionEvent = key =>{
     }
 }
 
-const createFood= () =>{
+const createFood = () =>{
     const randomEmptySquare = emptySquares[Math.floor(Math.random() * emptySquares.length)]
     drawSquare(randomEmptySquare, 'foodSquare')
 }
@@ -147,7 +147,7 @@ const createBoard = () =>{
 
 const setGame = () => {
     score = 0
-    snake = ['00','01','02','03']
+    snake = ['00','01']
     direction = 'ArrowRight'
     boardSquares = Array.from(Array(boardSize), () => new Array(boardSize).fill(squareTypes.emptySquare))
     console.log(boardSquares)
