@@ -3,6 +3,11 @@
     color: white;
     background-color: rgb(28,27,27);
 }
+
+#h2snake:hover, #gameOver, #hpuntuacion, #hsnake, #hrecord{
+    cursor: default;
+}
+
 #h2snake{
     display: none;
     position: fixed;
@@ -71,6 +76,7 @@
     border: none;
     color: white;
 }
+
 #hsnake{
     display: block;
     position: fixed;
@@ -78,6 +84,7 @@
     bottom: 350px;
     font-size: 150px;
 }
+
 #hrecord{
     display: none;
     color: rgb(220,220,220);
@@ -86,6 +93,7 @@
     bottom: 400px;
     background-color: transparent;
 }
+
 #hpuntuacion{
     display: none;
     color: rgb(220,220,220);
@@ -94,6 +102,7 @@
     bottom: 435px;
     background-color: transparent;
 }
+
 #scoreBoard{
     position: fixed;
     bottom: 468px;
@@ -103,6 +112,7 @@
     flex-direction: column;
     color: rgb(220,220,220);
 }
+
 #record{
     background-color: transparent;
     position: fixed;
