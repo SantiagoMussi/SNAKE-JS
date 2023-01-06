@@ -1,0 +1,99 @@
+*{
+    font-family: cascadia mono;
+    color: white;
+    background-color: rgb(28,27,27);
+}
+h1{
+    color: rgb(220,220,220);
+    margin-left: 20px;
+}
+
+#board, .boardInfo{
+    max-width: 500px;
+}
+
+#board{
+    margin-top: 10px;
+    position: fixed;
+    left: 610px;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+
+#start,.boardInfo{
+    font-size: 25px;
+}
+
+#gameOver{
+    background-color: transparent;
+    position: fixed;
+    left: 800px;
+    bottom: 500px;
+    color: rgb(220,220,220);
+    font-size: 50px;
+    display: none;
+}
+
+.boardInfo{
+    margin-top: 10px;
+}
+
+#start{
+    margin-top: 5px;
+    height: 45px;
+    position: fixed;
+    left: 915px;
+    bottom: 85px;
+    display: block;
+    background-color: #f35a69;
+    border: none;
+    color: white;
+}
+#hrecord{
+    color: rgb(220,220,220);
+    position: fixed;
+    left: 1100px;
+    top: 20px;
+}
+#hpuntuacion{
+    color: rgb(220,220,220);
+    position: fixed;
+    left: 700px;
+    top: 20px
+}
+#scoreBoard{
+    position: fixed;
+    bottom: 855px;
+    left: 870px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(220,220,220);
+    display: inline;
+}
+#record{
+    position: fixed;
+    bottom: 855px;
+    left: 1210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(220,220,220);
+    display: inline-flex;
+}
+
+.square{
+    width: 70px;
+    height: 70px;
+}
+
+.emptySquare{
+    background-color: rgb(41, 41, 41);
+}
+
+.snakeSquare{
+    background-color: rgb(96,96,96);
+}
+
+.foodSquare{
+    background-color: #f35a69;
+}
