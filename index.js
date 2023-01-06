@@ -87,6 +87,10 @@ const addFood= () =>{
 }
 
 const gameOver = () =>{
+    hrecord.style.display = 'block'
+    hpuntuacion.style.display = 'block'
+    scoreBoard.style.display = 'block'
+    record.style.display = 'block'
     reintentar.style.display = 'block'
     gameOverSign.style.display = 'block'
     clearInterval(moveInterval)
@@ -157,10 +161,12 @@ const setGame = () => {
 }
 
 const startGame = () =>{
-    startButton.style.display = 'none'
+    hrecord.style.display = 'none'
+    hpuntuacion.style.display = 'none'
+    scoreBoard.style.display = 'none'
+    record.style.display = 'none'
     reintentar.style.display = 'none'
-    hrecord.style.display = 'block'
-    hpuntuacion.style.display = 'block'
+    startButton.style.display = 'none'
     hsnake.style.display = 'none'
     h2snake.style.display = 'block'
     score = 0
