@@ -1,7 +1,7 @@
 *{
     font-family: cascadia mono;
     color: white;
-    background-color: rgb(28,27,27);
+    background-color: rgb(27,27,27);
 }
 
 #h2snake:hover, #gameOver, #hpuntuacion, #hsnake, #hrecord{
@@ -41,6 +41,7 @@
     color: rgb(220,220,220);
     font-size: 50px;
     display: none;
+    z-index: 1001;
 }
 
 .boardInfo{
@@ -52,16 +53,18 @@
     margin-top: 5px;
     height: 45px;
     position: fixed;
-    left: 850px;
+    left: 875px;
     bottom: 380px;
     display: none;
     background-color: #f35a69;
     border: none;
     color: white;
+    z-index: 1001;
 }
 #start:hover, #reintentar:hover{
     background-color: #f12e41;
     cursor: pointer;
+    z-index: 1001;
 }
 
 #start{
@@ -89,44 +92,60 @@
     display: none;
     color: rgb(220,220,220);
     position: fixed;
-    left: 850px;
+    left: 875px;
     bottom: 400px;
     background-color: transparent;
+    z-index: 1001;
 }
 
 #hpuntuacion{
     display: none;
     color: rgb(220,220,220);
     position: fixed;
-    left: 850px;
+    left: 875px;
     bottom: 435px;
     background-color: transparent;
+    z-index: 1001;
 }
 
 #scoreBoard{
-    position: fixed;
+    position: absolute;
     bottom: 468px;
-    left: 1020px;
+    left: 1040px;
     background-color: transparent;
     display: none;
     flex-direction: column;
     color: rgb(220,220,220);
+    z-index: 1001;
+}
+
+#endBoard {
+    display: none;
+    position: fixed;
+    left: 760px;
+    bottom: 300px;
+    width: 400px;
+    height: 350px;
+    background-color: rgb(27,27,27);
+    z-index: 1000;
 }
 
 #record{
     background-color: transparent;
     position: fixed;
     bottom: 433px;
-    left: 960px;
+    left: 985px;
     display: none;
     align-items: center;
     justify-content: center;
     color: rgb(220,220,220);
+    z-index: 1001;
 }
 
 .square{
     width: 70px;
     height: 70px;
+    border-radius: 15%;
 }
 
 .emptySquare{

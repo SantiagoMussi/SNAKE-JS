@@ -8,6 +8,7 @@ const hpuntuacion = document.getElementById("hpuntuacion")
 const hsnake = document.getElementById("hsnake")
 const h2snake = document.getElementById("h2snake")
 const reintentar = document.getElementById("reintentar")
+const endBoard = document.getElementById("endBoard")
 
 const boardSize = 10
 const gameSpeed = 100
@@ -87,6 +88,7 @@ const addFood= () =>{
 }
 
 const gameOver = () =>{
+    endBoard.style.display = 'block'
     hrecord.style.display = 'block'
     hpuntuacion.style.display = 'block'
     scoreBoard.style.display = 'block'
@@ -161,6 +163,7 @@ const setGame = () => {
 }
 
 const startGame = () =>{
+    endBoard.style.display = 'none'
     hrecord.style.display = 'none'
     hpuntuacion.style.display = 'none'
     scoreBoard.style.display = 'none'
