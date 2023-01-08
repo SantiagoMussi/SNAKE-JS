@@ -9,6 +9,7 @@
 }
 
 #h2snake{
+    transition: color 0.5s;
     display: none;
     position: fixed;
     font-size: 40px;
@@ -38,7 +39,7 @@
     position: fixed;
     left: 800px;
     bottom: 500px;
-    color: rgb(220,220,220);
+    color: #f35a69;
     font-size: 50px;
     display: none;
     z-index: 1001;
@@ -48,6 +49,7 @@
     margin-top: 10px;
 }
 #reintentar{
+    transition: background-color 0.5s;
     border-radius: 0px;
     font-size: 25px;
     margin-top: 5px;
@@ -62,12 +64,17 @@
     z-index: 1001;
 }
 #start:hover, #reintentar:hover{
-    background-color: #f12e41;
+    background-color: #ff0019;
     cursor: pointer;
     z-index: 1001;
 }
 
+#start:normal,#reintentar:normal{
+    background-color: #f35a69;
+}
+
 #start{
+    transition: background-color 0.5s;
     border-radius: 0px;
     margin-top: 5px;
     height: 45px;
@@ -80,12 +87,30 @@
     color: white;
 }
 
+#h2snake:hover{
+    color: #f35a69;
+}
+
+#h2snake:normal{
+    color: white;
+}
+
+#hsnake:hover{
+    color: #f35a69;
+}
+
 #hsnake{
+    transition: color 0.5s;
+    color: white;
     display: block;
     position: fixed;
     left: 730px;
     bottom: 350px;
     font-size: 150px;
+}
+
+#hsnake:normal{
+    color: white;
 }
 
 #hrecord{
@@ -157,5 +182,6 @@
 }
 
 .foodSquare{
+    display: block;
     background-color: #f35a69;
 }
