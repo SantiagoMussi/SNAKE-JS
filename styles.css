@@ -48,6 +48,7 @@
 .boardInfo{
     margin-top: 10px;
 }
+
 #reintentar{
     transition: background-color 0.5s;
     border-radius: 0px;
@@ -87,16 +88,12 @@
     color: white;
 }
 
-#h2snake:hover{
+#h2snake:hover,#hsnake:hover{
     color: #f35a69;
 }
 
-#h2snake:normal{
+#h2snake:normal,#hsnake:normal{
     color: white;
-}
-
-#hsnake:hover{
-    color: #f35a69;
 }
 
 #hsnake{
@@ -107,10 +104,6 @@
     left: 730px;
     bottom: 350px;
     font-size: 150px;
-}
-
-#hsnake:normal{
-    color: white;
 }
 
 #hrecord{

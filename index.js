@@ -9,7 +9,7 @@ const hsnake = document.getElementById("hsnake")
 const h2snake = document.getElementById("h2snake")
 const reintentar = document.getElementById("reintentar")
 const endBoard = document.getElementById("endBoard")
-
+    
 const boardSize = 10
 const gameSpeed = 100
 
