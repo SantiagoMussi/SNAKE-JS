@@ -1,7 +1,6 @@
-*{
-    font-family: cascadia mono;
-    color: white;
+body{
     background-color: rgb(27,27,27);
+    font-family: cascadia mono;
 }
 
 #h2snake:hover, #gameOver, #hpuntuacion, #hsnake, #hrecord{
@@ -12,58 +11,50 @@
     transition: color 0.5s;
     display: none;
     position: fixed;
-    font-size: 40px;
-    left: 870px;
+    font-size: 2vw;
+    left: 46vw;
     color: rgb(220,220,220);
     margin-left: 20px;
 }
 
-#board, .boardInfo{
-    max-width: 500px;
-}
-
 #board{
-    margin-top: 100px;
+    margin-top: 10vh;
     position: fixed;
-    left: 610px;
+    left: 30vw;
+    height: 50vh;
     display: grid;
     grid-template-columns: repeat(10,1fr);
 }
 
 #start,.boardInfo{
-    font-size: 25px;
+    font-size: 1vw;
 }
 
 #gameOver{
     background-color: transparent;
     position: fixed;
-    left: 800px;
-    bottom: 500px;
+    left: 42vw;
+    bottom: 53vh;
     color: #f35a69;
-    font-size: 50px;
+    font-size: 2.5vw;
     display: none;
     z-index: 1001;
 }
 
-.boardInfo{
-    margin-top: 10px;
-}
-
 #reintentar{
     transition: background-color 0.5s;
-    border-radius: 0px;
-    font-size: 25px;
-    margin-top: 5px;
-    height: 45px;
+    font-size: 1vw;
+    height: 4vh;
     position: fixed;
-    left: 875px;
-    bottom: 380px;
+    left: 46vw;
+    bottom: 40vh;
     display: none;
     background-color: #f35a69;
     border: none;
     color: white;
     z-index: 1001;
 }
+
 #start:hover, #reintentar:hover{
     background-color: #ff0019;
     cursor: pointer;
@@ -76,13 +67,12 @@
 
 #start{
     transition: background-color 0.5s;
-    border-radius: 0px;
-    margin-top: 5px;
-    height: 45px;
+    border-radius: none;
+    height: 6vh;
     position: fixed;
-    left: 915px;
-    bottom: 400px;
-    display: block;
+    left: 48vw;
+    bottom: 39vh;
+    display: inline;
     background-color: #f35a69;
     border: none;
     color: white;
@@ -101,17 +91,17 @@
     color: white;
     display: block;
     position: fixed;
-    left: 730px;
-    bottom: 350px;
-    font-size: 150px;
+    left: 35vw;
+    bottom: 30vh;
+    font-size: 10vw;
 }
 
 #hrecord{
     display: none;
     color: rgb(220,220,220);
     position: fixed;
-    left: 875px;
-    bottom: 400px;
+    left: 46vw;
+    bottom: 43vh;
     background-color: transparent;
     z-index: 1001;
 }
@@ -120,16 +110,16 @@
     display: none;
     color: rgb(220,220,220);
     position: fixed;
-    left: 875px;
-    bottom: 435px;
+    left: 46vw;
+    bottom: 47vh;
     background-color: transparent;
     z-index: 1001;
 }
 
 #scoreBoard{
-    position: absolute;
-    bottom: 468px;
-    left: 1040px;
+    position: fixed;
+    bottom: 49.5vh;
+    left: 52.5vw;
     background-color: transparent;
     display: none;
     flex-direction: column;
@@ -140,10 +130,10 @@
 #endBoard {
     display: none;
     position: fixed;
-    left: 760px;
-    bottom: 300px;
-    width: 400px;
-    height: 350px;
+    left: 39.5vw;
+    bottom: 33vh;
+    width: 21vw;
+    height: 36vh;
     background-color: rgb(27,27,27);
     z-index: 1000;
 }
@@ -151,8 +141,8 @@
 #record{
     background-color: transparent;
     position: fixed;
-    bottom: 433px;
-    left: 985px;
+    bottom: 45.5vh;
+    left: 50vw;
     display: none;
     align-items: center;
     justify-content: center;
@@ -161,8 +151,8 @@
 }
 
 .square{
-    width: 70px;
-    height: 70px;
+    width: 4vw;
+    height: 8vh;
     border-radius: 15%;
 }
 
