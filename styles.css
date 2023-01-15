@@ -101,7 +101,7 @@ body{
     color: rgb(220,220,220);
     position: fixed;
     left: 46vw;
-    bottom: 43vh;
+    bottom: 42.7vh;
     background-color: transparent;
     z-index: 1001;
 }
@@ -111,15 +111,15 @@ body{
     color: rgb(220,220,220);
     position: fixed;
     left: 46vw;
-    bottom: 47vh;
+    bottom: 46vh;
     background-color: transparent;
     z-index: 1001;
 }
 
 #scoreBoard{
     position: fixed;
-    bottom: 49.5vh;
-    left: 52.5vw;
+    bottom: 48.9vh;
+    left: 52.7vw;
     background-color: transparent;
     display: none;
     flex-direction: column;
@@ -142,7 +142,7 @@ body{
     background-color: transparent;
     position: fixed;
     bottom: 45.5vh;
-    left: 50vw;
+    left: 50.3vw;
     display: none;
     align-items: center;
     justify-content: center;
