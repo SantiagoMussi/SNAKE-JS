@@ -118,11 +118,10 @@ body{
 
 #scoreBoard{
     position: fixed;
-    bottom: 48.9vh;
-    left: 52.7vw;
+    bottom: 49vh;
+    left: 52.5vw;
     background-color: transparent;
     display: none;
-    flex-direction: column;
     color: rgb(220,220,220);
     z-index: 1001;
 }
@@ -141,11 +140,9 @@ body{
 #record{
     background-color: transparent;
     position: fixed;
-    bottom: 45.5vh;
-    left: 50.3vw;
+    bottom: 45.7vh;
+    left: 50.2vw;
     display: none;
-    align-items: center;
-    justify-content: center;
     color: rgb(220,220,220);
     z-index: 1001;
 }
