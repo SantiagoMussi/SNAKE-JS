@@ -1,6 +1,6 @@
 const board = document.getElementById("board")
-const scoreBoard = document.getElementById("scoreBoard")
-const startButton = document.getElementById("start")
+const puntuacion = document.getElementById("scoreBoard")
+const startBtn = document.getElementById("start")
 const gameOverSign = document.getElementById("gameOver")
 const record = document.getElementById("record")
 const hrecord = document.getElementById("hrecord")
@@ -8,7 +8,7 @@ const hpuntuacion = document.getElementById("hpuntuacion")
 const hsnake = document.getElementById("hsnake")
 const h2snake = document.getElementById("h2snake")
 const reintentar = document.getElementById("reintentar")
-const endBoard = document.getElementById("endBoard")
+const bloqueFinal = document.getElementById("endBoard")
 
 const boardSize = 10
 const gameSpeed = 100
@@ -88,15 +88,15 @@ const addFood= () =>{
 }
 
 const gameOver = () =>{
-    endBoard.style.display = 'block'
+    bloqueFinal.style.display = 'block'
     hrecord.style.display = 'block'
     hpuntuacion.style.display = 'block'
-    scoreBoard.style.display = 'block'
+    puntuacion.style.display = 'block'
     record.style.display = 'block'
     reintentar.style.display = 'block'
     gameOverSign.style.display = 'block'
     clearInterval(moveInterval)
-    startButton.disabled = false
+    startBtn.disabled = false
     updateMejorScore()
 }
 
@@ -127,7 +127,7 @@ const createFood = () =>{
 }
 
 const updateScore = () =>{
-    scoreBoard.innerText = score
+    puntuacion.innerText = score
 }
 
 const updateMejorScore = () =>{
@@ -137,7 +137,7 @@ const updateMejorScore = () =>{
     record.innerText = mejorScore
 }
 
-const createBoard = () =>{
+const crearBoard = () =>{
     boardSquares.forEach( (row,rowIndex) => {
         row.forEach( (column, columnndex) =>{
             const squareValue = `${rowIndex}${columnndex}`
@@ -159,23 +159,23 @@ const setGame = () => {
     console.log(boardSquares)
     board.innerHTML = ''
     emptySquares = []
-    createBoard()
+    crearBoard()
 }
 
-const startGame = () =>{
-    endBoard.style.display = 'none'
+const startJuego = () =>{
+    bloqueFinal.style.display = 'none'
     hrecord.style.display = 'none'
     hpuntuacion.style.display = 'none'
-    scoreBoard.style.display = 'none'
+    puntuacion.style.display = 'none'
     record.style.display = 'none'
     reintentar.style.display = 'none'
-    startButton.style.display = 'none'
+    startBtn.style.display = 'none'
     hsnake.style.display = 'none'
     h2snake.style.display = 'block'
     score = 0
     setGame()
     gameOverSign.style.display = 'none'
-    startButton.disabled = true
+    startBtn.disabled = true
     drawSnake()
     updateScore()
     updateMejorScore()
@@ -184,5 +184,5 @@ const startGame = () =>{
     moveInterval = setInterval( () => moveSnake(), gameSpeed)
 }
 
-startButton.addEventListener('click',startGame)
-reintentar.addEventListener('click',startGame)
+startBtn.addEventListener('click',startJuego)
+reintentar.addEventListener('click',startJuego)
